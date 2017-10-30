@@ -1,0 +1,5 @@
+
+USE ${base_de_datos}
+ALTER DATABASE ${base_de_datos} SET RECOVERY SIMPLE WITH NO_WAIT
+DBCC SHRINKFILE(${base_de_datos}_Log, 1)
+ALTER DATABASE ${base_de_datos} SET RECOVERY FULL WITH NO_WAIT

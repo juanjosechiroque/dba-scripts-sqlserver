@@ -1,0 +1,7 @@
+
+set rowcount 1
+	delete from ${tabla} where ${columna} = ${valor}	
+set rowcount 0
+
+Nota:
+Si existen 3, 4 o más duplicados, reemplazar el numero 1 por N-1
